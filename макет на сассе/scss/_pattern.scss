@@ -1,0 +1,20 @@
+%Paragraph{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    max-width: 721px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -0.88px;
+    color: #fff;
+    span{
+        display: block;
+        font-family: 'Arial';
+        text-transform: none;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: normal;
+    }
+}

@@ -1,0 +1,95 @@
+@import "_settings-css";
+@import "_pattern";
+@import "_peremenn";
+
+body {
+    font-family: "Open Sans", 'Lato', 'Raleway' sans-serif;
+}
+header {
+    max-width: 1155px;
+    margin: 0 auto;
+}
+nav {
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 795px;
+        li {
+            a {
+                display: block;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                font-size: 14px;
+                font-weight: normal;
+                color: #868686;
+                &:hover{
+                    display: inline-block;
+                    border-radius: 2px;
+                    padding: 10px 20px;
+                    background-color: #ffbb42;
+                    color: #fff;
+                    transition: .4s all;
+            }
+            &:first-child{
+                padding-left: 22px;
+                }
+            }
+        }
+    }
+}
+.banner {
+    background-color: #709dca;
+    height: 600px;
+}
+h1 {
+    padding: 110px 0 33px;
+    @extend %Paragraph;
+    font-size: 35px;
+}
+form {
+    text-align: center;
+    padding-bottom: 67px;
+    input {
+        width: 281px;
+        height: 46px;
+        padding: 0 41px;
+        margin-left: 10px;
+        font-family: 'Lato';
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: normal;
+        color: #a9a9a9;
+        &:first-child {
+            margin-left: 0;
+            background-image: url(../img/name.png);
+            background-repeat: no-repeat;
+            background-position: 15px center;
+        }
+        &:nth-child(2) {
+            background-image: url(../img/message.png);
+            background-repeat: no-repeat;
+            background-position: 15px center;
+        }
+        &:nth-child(3) {
+            background-image: url(../img/tell.png);
+            background-repeat: no-repeat;
+            background-position: 15px center;
+        }
+    }
+    button {
+        text-transform: uppercase;
+        width: 211px;
+        height: 46px;
+        border-radius: 2px;
+        background-color: #ffbb42;
+        margin-left: 10px;
+        font-family: 'Open Sans';
+        color: white;
+    }
+}
+
