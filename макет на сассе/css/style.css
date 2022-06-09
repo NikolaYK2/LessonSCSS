@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h1, h2 {
+h1, h2, #How > h2, #Happy > h3 {
   margin: 0 auto;
   text-align: center;
   font-family: 'Raleway';
@@ -83,7 +83,7 @@ h1, h2 {
   color: #fff;
 }
 
-h1 span, h2 span {
+h1 span, h2 span, #How > h2 span, #Happy > h3 span {
   display: block;
   font-family: 'Arial';
   text-transform: none;
@@ -618,4 +618,94 @@ h2 {
   font-size: 14px;
   font-weight: normal;
   color: #fff;
+}
+
+#How > h2 {
+  color: #394b50;
+  margin-top: 155px;
+}
+
+#How .block_How {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 72px;
+  background: url(../img/arrow-2.png) center center no-repeat, url(../img/arrow-1.png) 23% top no-repeat, url(../img/arrow-1.png) right 21% top no-repeat;
+}
+
+#How .block_How .block_how_item {
+  max-width: 213px;
+  min-height: 299px;
+  text-align: center;
+}
+
+#How .block_How .block_how_item:first-child {
+  background: url(../img/h1.png) center 40px no-repeat;
+}
+
+#How .block_How .block_how_item:nth-child(2) {
+  background: url(../img/h2.png) center 40px no-repeat;
+}
+
+#How .block_How .block_how_item:nth-child(3) {
+  background: url(../img/h3.png) center 40px no-repeat;
+}
+
+#How .block_How .block_how_item:last-child {
+  background: url(../img/h4.png) center 40px no-repeat;
+}
+
+#How .block_How .block_how_item > h3 {
+  margin: 199px 0 28px;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #394b50;
+}
+
+#How .block_How .block_how_item > p {
+  max-width: 213px;
+  margin: 28px 0 0;
+  font-family: 'arial';
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.69;
+  color: #7b7b7b;
+}
+
+#How > a {
+  display: block;
+  width: 168px;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  margin: 91px auto;
+  padding: 18px 27px 16px 28px;
+  border-radius: 2px;
+  background-color: #ffbb42;
+}
+
+#Happy {
+  background: #ffc155;
+}
+
+#Happy > h3 {
+  padding-top: 141px;
+  margin: 0 auto 58px;
+}
+
+#Happy .block_Happy {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(567px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(567px, 1fr));
+  -ms-grid-rows: (241px)[2];
+      grid-template-rows: repeat(2, 241px);
 }
