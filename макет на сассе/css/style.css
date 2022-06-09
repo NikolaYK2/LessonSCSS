@@ -483,3 +483,139 @@ h2 {
   border-radius: 2px;
   border: solid 1px #e7ad48;
 }
+
+#Pricing {
+  background-color: #e7edf3;
+  height: 898px;
+}
+
+#Pricing > h2 {
+  margin: 0 auto 79px;
+  padding: 137px 0 0;
+}
+
+.Choos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 405px) {
+  .Choos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Choos .Choos1 {
+  width: 33.33%;
+  height: 441px;
+  border-radius: 3px;
+  border: solid 1px #ccd5df;
+  background-color: #fff;
+  text-align: center;
+  color: #818b95;
+}
+
+@media (max-width: 600px) {
+  .Choos .Choos1 {
+    height: 100%;
+  }
+}
+
+.Choos .Choos1:nth-child(1):hover, .Choos .Choos1:nth-child(2):hover, .Choos .Choos1:nth-child(3):hover {
+  background-color: #709dca;
+  width: 395px;
+  height: 501px;
+  margin: -30px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  -webkit-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all;
+  color: #fff;
+}
+
+.Choos .Choos1:nth-child(1):hover > p, .Choos .Choos1:nth-child(2):hover > p, .Choos .Choos1:nth-child(3):hover > p {
+  color: #fff;
+}
+
+.Choos .Choos1 > h3 {
+  margin-top: 53px;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.Choos .Choos1 > p:nth-child(2) {
+  font-family: 'lato';
+  margin-top: 23px;
+  font-size: 60px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e7ad48;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.Choos .Choos1 > p > span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.Choos .Choos1 > p:nth-child(3) {
+  margin: 3px auto 33px 0;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.Choos .Choos1 > p:nth-child(4), .Choos .Choos1 > p:nth-child(6) {
+  margin: -4px auto;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.86;
+  max-width: 329px;
+  border-top: 1px solid #e2e9f0;
+}
+
+.Choos .Choos1 > p:nth-child(5) {
+  margin: 4px auto;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.86;
+  max-width: 329px;
+  border-top: 1px solid #e2e9f0;
+}
+
+.Choos .Choos1 > a {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 22px auto;
+  padding: 16px 21px;
+  border-radius: 2px;
+  background-color: #ffbb42;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: normal;
+  color: #fff;
+}
